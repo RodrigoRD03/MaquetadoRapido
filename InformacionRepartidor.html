@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a3c9717c3d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./EstilosLayout.css">
+    <title>Administrador</title>
+</head>
+<body>
+    <div class="Desplegar-Aside">
+        <span><i class="fa-solid fa-chevron-right"></i></span>
+    </div>
+    <aside class="Aside-Content">
+        <div class="Nombre-Administrador">
+            <span><i class="fa-solid fa-user"></i></span>
+            <div class="Nombre-Area">
+                <h1>Rodrigo</h1>
+                <h3>Rodriguez Díaz</h3>
+            </div>
+            <hr/>  
+        </div>
+        <div class="Opciones-Content">
+            <div class="Opciones-Tittle">
+                <h2>Opciones</h2>
+            </div>
+            <a class="Option-Area">
+                <span><i class="fa-solid fa-map-location-dot Icons"></i></span>
+                <div class="Text-Option">
+                    <p>Pedidos</p>
+                </div>
+            </a>
+            <a href="Productos.html" class="Option-Area">
+                <span><i class="fa-solid fa-cart-arrow-down Icons"></i></span>
+                <div class="Text-Option">
+                    <p>Productos</p>
+                </div>
+            </a>
+            <a href="./ListaRepartidores.html" class="Option-Area">
+                <span><i class="fa-solid fa-motorcycle Icons"></i></span>
+                <div class="Text-Option">
+                    <p>Repartidores</p>
+                </div>
+            </a>
+            <a href="./registrarRepartidores.html" class="Option-Area">
+                <span><i class="fa-solid fa-user-plus Icons"></i></span>
+                <div class="Text-Option">
+                    <p>Registrar</p> 
+                    <p>Repartidores</p>
+                </div>
+            </a>
+            <a href="./Usuarios.html" class="Option-Area"> 
+                <span><i class="fa-solid fa-users Icons"></i></span>
+                <div class="Text-Option">
+                    <p>Usuarios</p>
+                </div>
+            </a>
+        </div>
+        <div class="Logout-Content">
+            <hr/>
+            <div class="Logout-Area">
+                <span><i class="fa-solid fa-right-from-bracket"></i></span>
+                <div>
+                    <h3>Cerrar Sesión</h3>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <section class="Content-Section">
+        <div class="Page_Seleccion">
+            <h3 class="Pagina">Pagina&nbsp</h3>
+            <h3 class="Seleccion">/&nbspRepartidores</h3>
+            <h2 class="Titulo-Pagina">Información del Repartidor</h>
+        </div>
+        <div class="Contenido">
+                <div class="Instrucciones">
+                    <h1>Edita la Información.</h1>
+                    <span><i class="fa-solid fa-pen"></i></span>
+                </div>
+                <div class="Info-Repartidor">
+                    <div class="Area-Input_Nombre">
+                        <h3 class="Tittles">Nombre Completo</h3>
+                        <i class="fa-solid fa-user user-Icon IconsRR"></i>
+                        <input type="text" class="Nombre-Input" required name="name" id="Nombre" value="Rodriguez Díaz Rodrigo">
+                    </div>
+                    <div class="numbers-Containers">
+                        <div class="Area-Input_Edad">
+                            <h3 class="Tittles">Edad</h3>
+                            <i class="fa-solid fa-calendar IconsRR"></i>
+                            <input class="Edad-Input" type="number" name="Edad" m="0" max="98" required id="Edad" value="21">
+                        </div>
+                        <div class="Area-Input_Telefono">
+                            <h3 class="Tittles">Numero Telefonico</h3>
+                            <i class="fa-solid fa-phone IconsRR"></i>
+                            <input class="Telefono-Input" type="number" name="name" value="5613067792" min="1" minlength="10" required>
+                        </div> 
+                    </div>
+                    <div class="Area-Input_Direction">
+                        <h3 class="Tittles">Dirección</h3>
+                        <i class="fa-solid fa-location-dot IconsRR"></i>
+                        <input class="Direccion-Input" type="text" name="name" value="CDA. Rancho La Herradura Mz.74 Lt. C.100" required >
+                    </div>
+                    <div class="Area-Input_password">
+                        <h3 class="Tittles" >Contraseña</h3>
+                        <i class="fa-solid fa-lock IconsRR"></i>
+                        <input class="input-Password" type="password" name="name" value="018938rodrigo" required >
+                        <i class="fa-solid fa-eye eye"></i>
+                    </div>
+                    <div class="Activar-Desactivar">
+                        <button class="Desactivar" type="submit" ">Desactivar</button>
+                        <button class="Activar" type="submit" ">Activar</button>
+                    </div>
+                    <div class="Area-Input_Button Button-Actualizar">
+                        <button class="button Actualizar" type="submit" ">Actualizar</button>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <script src="./Dom/DOMLogin.js"></script>
+<script src="./Dom/Aside.js"></script>
+</body>
+</html>
